@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Fundación Shakiras Ayuda">
+  <defs>
+    <linearGradient id="saG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3B0A6B"/>
+      <stop offset="1" stop-color="#E62E86"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="57" fill="#FDEAF3"/>
+  <g class="heart" fill="url(#saG)">
+    <path d="M60 78C42 64 30 53 30 42c0-9 7-16 15-16 7 0 12 5 15 11 3-6 8-11 15-11 8 0 15 7 15 16 0 11-12 22-30 36z"/>
+  </g>
+  <g fill="#3B0A6B" opacity=".92">
+    <path d="M45 95C29 95 16 88 12 77c-1-4 3-7 7-5 3 1 5 4 6 7 4 7 12 10 20 10z"/>
+    <path d="M75 95c16 0 29-7 33-18 1-4-3-7-7-5-3 1-5 4-6 7-4 7-12 10-20 10z"/>
+  </g>
+  <style>
+    .heart{transform-origin:60px 52px;animation:beat 1.6s ease-in-out infinite}
+    @keyframes beat{0%,100%{transform:scale(1)}14%{transform:scale(1.14)}28%{transform:scale(1)}42%{transform:scale(1.09)}56%{transform:scale(1)}}
+    @media (prefers-reduced-motion:reduce){.heart{animation:none}}
+  </style>
+</svg>
