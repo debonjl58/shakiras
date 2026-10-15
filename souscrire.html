@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Demande d'aide — Fundación Shakiras Ayuda</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="alternate" hreflang="es" href="https://votre-domaine.org/?lang=es">
+<link rel="alternate" hreflang="fr" href="https://votre-domaine.org/?lang=fr">
+<link rel="alternate" hreflang="en" href="https://votre-domaine.org/?lang=en">
+<link rel="alternate" hreflang="de" href="https://votre-domaine.org/?lang=de">
+<link rel="alternate" hreflang="pt" href="https://votre-domaine.org/?lang=pt">
+<link rel="alternate" hreflang="x-default" href="https://votre-domaine.org/">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 120 120" aria-hidden="true">
+        <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#3B0A6B"/><stop offset="1" stop-color="#E62E86"/></linearGradient></defs>
+        <circle cx="60" cy="60" r="57" fill="#FDEAF3"/>
+        <path class="heart" fill="url(#g1)" d="M60 78C42 64 30 53 30 42c0-9 7-16 15-16 7 0 12 5 15 11 3-6 8-11 15-11 8 0 15 7 15 16 0 11-12 22-30 36z"/>
+        <g fill="#3B0A6B" opacity=".92">
+          <path d="M45 95C29 95 16 88 12 77c-1-4 3-7 7-5 3 1 5 4 6 7 4 7 12 10 20 10z"/>
+          <path d="M75 95c16 0 29-7 33-18 1-4-3-7-7-5-3 1-5 4-6 7-4 7-12 10-20 10z"/>
+        </g>
+      </svg>
+      <span class="bt"><b>Fundación Shakiras Ayuda</b><i data-i="brand_sub"></i></span>
+    </a>
+    <div class="langs" style="margin-left:auto" role="group" aria-label="Language">
+      <button data-lang="es" aria-pressed="false">ES</button>
+      <button data-lang="fr" aria-pressed="false">FR</button>
+      <button data-lang="en" aria-pressed="false">EN</button>
+      <button data-lang="de" aria-pressed="false">DE</button>
+      <button data-lang="pt" aria-pressed="false">PT</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap fhead">
+    <h1 data-i="f_t"></h1>
+    <p data-i="f_lead"></p>
+  </div>
+
+  <div class="wrap">
+    <div class="fcard">
+      <div id="errBox" class="err-msg hide"></div>
+
+      <form id="formAide" action="traitement.php" method="post" novalidate>
+        <input type="hidden" name="lang" id="langField" value="es">
+
+        <!-- Civilité + Naissance -->
+        <div class="row">
+          <div class="f">
+            <label for="civilite" data-i="f_civ"></label>
+            <select class="in" id="civilite" name="civilite" required></select>
+          </div>
+          <div class="f">
+            <label for="naissance" data-i="f_naiss"></label>
+            <input class="in" type="date" id="naissance" name="naissance" max="2012-12-31" required>
+          </div>
+        </div>
+
+        <!-- Nom -->
+        <div class="f">
+          <label for="nom" data-i="f_nom"></label>
+          <input class="in" type="text" id="nom" name="nom" data-i-ph="ph_nom" required autocomplete="name">
+        </div>
+
+        <!-- Pays + Ville -->
+        <div class="row">
+          <div class="f">
+            <label for="pays" data-i="f_pays"></label>
+            <select class="in" id="pays" name="pays" required></select>
+          </div>
+          <div class="f">
+            <label for="ville" data-i="f_ville"></label>
+            <input class="in" type="text" id="ville" name="ville" data-i-ph="ph_ville" required autocomplete="address-level2">
+          </div>
+        </div>
+
+        <!-- Adresse -->
+        <div class="f">
+          <label for="adresse" data-i="f_adr"></label>
+          <input class="in" type="text" id="adresse" name="adresse" data-i-ph="ph_adr" required autocomplete="street-address">
+        </div>
+
+        <!-- Téléphone avec indicatif auto -->
+        <div class="f">
+          <label for="telephone" data-i="f_tel"></label>
+          <div class="phone">
+            <span class="prefix" id="prefix">+</span>
+            <input class="in" type="tel" id="telephone" name="telephone" data-i-ph="ph_tel" required autocomplete="tel">
+          </div>
+          <input type="hidden" name="indicatif" id="indicatif" value="">
+          <div class="hint" data-i="f_tel_hint"></div>
+        </div>
+
+        <div class="sep"><h3 data-i="f_sit"></h3></div>
+
+        <!-- Marié(e) + Profession -->
+        <div class="row">
+          <div class="f">
+            <label for="marital" data-i="f_mar"></label>
+            <select class="in" id="marital" name="marital" required></select>
+          </div>
+          <div class="f">
+            <label for="profession" data-i="f_prof"></label>
+            <input class="in" type="text" id="profession" name="profession" data-i-ph="ph_prof" required>
+          </div>
+        </div>
+
+        <!-- Enfants -->
+        <div class="row">
+          <div class="f">
+            <label for="enfants" data-i="f_enf"></label>
+            <select class="in" id="enfants" name="enfants" required></select>
+          </div>
+          <div class="f hide" id="wrap_nb">
+            <label for="nb_enfants" data-i="f_nb"></label>
+            <select class="in" id="nb_enfants" name="nb_enfants"></select>
+          </div>
+        </div>
+
+        <div class="sep"><h3 data-i="f_dem"></h3></div>
+
+        <!-- Montant + Source -->
+        <div class="row">
+          <div class="f">
+            <label for="montant" data-i="f_mont"></label>
+            <select class="in" id="montant" name="montant" required></select>
+             <div class="hint" data-i="f_mont_hint"></div>
+          </div>
+          <div class="f">
+            <label for="source" data-i="f_src"></label>
+            <select class="in" id="source" name="source" required></select>
+          </div>
+        </div>
+
+        <div class="f">
+          <label for="mode_paiement" data-i="f_pay"></label>
+          <select class="in" id="mode_paiement" name="mode_paiement" required></select>
+        </div>
+
+        <button class="btn btn-p btn-full" type="submit" data-i="f_send"></button>
+        <div class="req">* <span data-i="f_required"></span></div>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap fbot" style="border:none;margin:0;padding:0">© <span id="yr"></span> Fundación Shakiras Ayuda</div>
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+  /* la langue choisie part avec le formulaire vers le PHP */
+  document.getElementById('langField').value = SA.lang;
+  document.addEventListener('sa:lang', function (e) { document.getElementById('langField').value = e.detail; });
+</script>
+</body>
+</html>

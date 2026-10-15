@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fundación Shakiras Ayuda — Ayuda financiera en todo el mundo</title>
+<meta name="description" content="Ayuda financiera directa para familias, estudiantes y emprendedores, en cualquier país.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="assets/img/logo.svg">
+<meta property="og:title" content="Fundación Shakiras Ayuda">
+<meta property="og:description" content="Unidos transformamos vidas.">
+<meta property="og:image" content="assets/img/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Fundación Shakiras Ayuda">
+      <svg viewBox="0 0 120 120" aria-hidden="true">
+        <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#3B0A6B"/><stop offset="1" stop-color="#E62E86"/></linearGradient></defs>
+        <circle cx="60" cy="60" r="57" fill="#FDEAF3"/>
+        <path class="heart" fill="url(#g1)" d="M60 78C42 64 30 53 30 42c0-9 7-16 15-16 7 0 12 5 15 11 3-6 8-11 15-11 8 0 15 7 15 16 0 11-12 22-30 36z"/>
+        <g fill="#3B0A6B" opacity=".92">
+          <path d="M45 95C29 95 16 88 12 77c-1-4 3-7 7-5 3 1 5 4 6 7 4 7 12 10 20 10z"/>
+          <path d="M75 95c16 0 29-7 33-18 1-4-3-7-7-5-3 1-5 4-6 7-4 7-12 10-20 10z"/>
+        </g>
+      </svg>
+      <span class="bt"><b>Fundación Shakiras Ayuda</b><i data-i="brand_sub"></i></span>
+    </a>
+    <ul>
+      <li><a href="#acciones" data-i="nav_actions"></a></li>
+      <li><a href="#como" data-i="nav_how"></a></li>
+      <li><a href="#faq" data-i="nav_faq"></a></li>
+      <li><a href="#contacto" data-i="nav_contact"></a></li>
+    </ul>
+    <div class="langs" role="group" aria-label="Language">
+      <button data-lang="es" aria-pressed="true">ES</button>
+      <button data-lang="fr" aria-pressed="false">FR</button>
+      <button data-lang="en" aria-pressed="false">EN</button>
+      <button data-lang="de" aria-pressed="false">DE</button>
+      <button data-lang="pt" aria-pressed="false">PT</button>
+    </div>
+    <button class="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="badge"><span>♥</span><span data-i="hero_badge"></span></div>
+      <h1 data-i="hero_t"></h1>
+      <p class="lead" data-i="hero_lead"></p>
+      <div class="cta">
+        <a class="btn btn-p" href="souscrire.html" data-i="hero_cta"></a>
+        <a class="btn btn-g" href="#acciones" data-i="hero_cta2"></a>
+      </div>
+      <p class="hint" style="margin-top:16px" data-i="hero_trust"></p>
+      <div class="stats">
+        <div class="stat"><b>193</b><i data-i="s1"></i></div>
+        <div class="stat"><b>48 500</b><i data-i="s2"></i></div>
+        <div class="stat"><b>12,4 M €</b><i data-i="s3"></i></div>
+        <div class="stat"><b>2009</b><i data-i="s4"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="acciones">
+    <div class="wrap">
+      <h2 data-i="act_t"></h2>
+      <p class="lead" data-i="act_lead"></p>
+      <div class="grid">
+        <div class="card reveal"><div class="ico">♥</div><h3 data-i="a1_t"></h3><p data-i="a1_d"></p></div>
+        <div class="card reveal"><div class="ico">✎</div><h3 data-i="a2_t"></h3><p data-i="a2_d"></p></div>
+        <div class="card reveal"><div class="ico">▲</div><h3 data-i="a3_t"></h3><p data-i="a3_d"></p></div>
+        <div class="card reveal"><div class="ico">●</div><h3 data-i="a4_t"></h3><p data-i="a4_d"></p></div>
+        <div class="card reveal"><div class="ico">✚</div><h3 data-i="a5_t"></h3><p data-i="a5_d"></p></div>
+        <div class="card reveal"><div class="ico">⌂</div><h3 data-i="a6_t"></h3><p data-i="a6_d"></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk alt" id="como">
+    <div class="wrap">
+      <h2 data-i="how_t"></h2>
+      <p class="lead" data-i="how_lead"></p>
+      <div class="steps">
+        <div class="step reveal"><b>1</b><h4 data-i="h1_t"></h4><p data-i="h1_d"></p></div>
+        <div class="step reveal"><b>2</b><h4 data-i="h2_t"></h4><p data-i="h2_d"></p></div>
+        <div class="step reveal"><b>3</b><h4 data-i="h3_t"></h4><p data-i="h3_d"></p></div>
+        <div class="step reveal"><b>4</b><h4 data-i="h4_t"></h4><p data-i="h4_d"></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="wrap">
+      <h2 data-i="world_t"></h2>
+      <p class="lead" data-i="world_lead"></p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="band">
+      <h2 data-i="cta_t"></h2>
+      <p data-i="cta_lead"></p>
+      <a class="btn btn-w" style="margin-top:20px" href="souscrire.html" data-i="cta_btn"></a>
+    </div>
+  </div>
+
+  <section class="blk" id="faq" style="padding-top:0">
+    <div class="wrap">
+      <h2 data-i="faq_t"></h2>
+      <p class="lead" data-i="faq_lead"></p>
+      <details class="faq"><summary data-i="q1"></summary><p data-i="a1"></p></details>
+      <details class="faq"><summary data-i="q2"></summary><p data-i="a2"></p></details>
+      <details class="faq"><summary data-i="q3"></summary><p data-i="a3"></p></details>
+      <details class="faq"><summary data-i="q4"></summary><p data-i="a4"></p></details>
+      <details class="faq"><summary data-i="q5"></summary><p data-i="a5"></p></details>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site" id="contacto">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h4>Fundación Shakiras Ayuda</h4>
+        <p data-i="foot_about"></p>
+        <p style="margin-top:10px">contact@shakiras-ayuda.org · +34 600 000 000</p>
+      </div>
+      <div>
+        <h4 data-i="foot_nav"></h4>
+        <p><a href="#acciones" data-i="nav_actions"></a></p>
+        <p><a href="#como" data-i="nav_how"></a></p>
+        <p><a href="#faq" data-i="nav_faq"></a></p>
+      </div>
+      <div>
+        <h4 data-i="foot_help"></h4>
+        <p><a href="souscrire.html" data-i="nav_apply"></a></p>
+      </div>
+    </div>
+    <div class="fbot">© <span id="yr"></span> Fundación Shakiras Ayuda — <span data-i="foot_rights"></span></div>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
